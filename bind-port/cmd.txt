@@ -1,0 +1,7 @@
+docker build -t first-web-server -f web-server.Dockerfile .
+
+docker run -d --name web-server -p 5001:5000 first-web-server
+
+-----note------
+-d -> background run
+-p -> port bind (outside:inside) from container
