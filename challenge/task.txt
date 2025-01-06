@@ -1,0 +1,7 @@
+-- challenge task --
+
+-> Start an instance of NGINX in Docker with the included website
+-> Name the container "website"
+-> Website should be accessible at http://localhost:8080
+-> Ensure that the container is removed when done
+-> Map $PWD/websiteto /usr/share/nginx/html if you volume mount
