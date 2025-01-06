@@ -1,0 +1,14 @@
+// use volume (--volume outside:inside or -v outside:inside) to save data in local from container
+
+docker run --rm --entrypoint sh -v /tmp/container:/tmp ubuntu -c "echo 'Hello there.' > /tmp/file && cat /tmp/file"
+
+
+--------note----------
+
+--rm -> Automatically remove the container after it stops.
+
+--entrypoint -> Flag overrides the default entry point of the image.
+
+sh -> Overrides the default entrypoint to use /bin/sh (for ubuntu image, /bin/bash is a default entrypoint).
+
+-v -> mounts a volume from your host machine to the container.
