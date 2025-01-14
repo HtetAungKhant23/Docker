@@ -1,0 +1,11 @@
+Three Best Practices
+
+- 1. Use Verified Images. (Image scanner - Clair, Trivy, Dagda)
+
+- 2. Avoid Latest. (Latest can be overidden, making rollback difficult)
+
+- 3. Use Non-Root Users. (Use Non-Root User when running containers)
+
+    -> eg: docker run --rm -it --user somebody-else suspect-image:v1.0.1
+
+    -> (--user) change the current user
