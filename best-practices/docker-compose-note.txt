@@ -1,0 +1,11 @@
+When you have backend server and web app, and then you want to deploy with docker.
+
+- Don't roll them into one giant Docker image.
+
+- Create a bunch of containers and link them together.
+(Time-consuming and error-prone)
+
+
+----- Docker compose ------
+
+    Docker compose makes starting and connecting multiple containers as easy as docker-compose up.
